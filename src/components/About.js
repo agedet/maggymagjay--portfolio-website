@@ -8,7 +8,7 @@ function About() {
           <h1 className='items-center text-[40px] font-[500]'>About Me</h1>
         </div>
 
-        <div className='flex h-[100] pt-20'>
+        <div className='flex flex-col h-[100] pt-20 sm:flex-row'>
           <div className='flex-1 p-10 flex justify-center items-center '>
             <div className='border border-cyan-500 p-10 bg-[#000000] h-[300px] w-60  relative'>
               <div className=' bg-[#fe1bfe22] h-[300px] w-60 absolute -top-10'>
