@@ -6,28 +6,29 @@ function Footer() {
       <div className='container mx-auto flex flex-col justify-between items-center px-10 sm:flex-row'>
         {/* logo */}
         <div>
-          <h1 className='text-white font-semibold text-[30px]'>M J</h1>
+          <h1 className='font-[Roboto] text-white text-center font-semibold text-[30px] sm:text-start'>M J</h1>
 
-          <p className='text-white font-[400] text-xs'>Copyright 2023. All Rights Reserved.</p>
+          <p className='font-[Roboto] text-white font-[400] text-xs'>
+            Copyright 2023. All Rights Reserved.
+          </p>
         </div>
 
         {/* social links */}
-        <div>
-          <ul className='flex flex-col items-center justify-center sm:flex-row'>
-            <li className='mx-5'>
-              <a href='#' className='text-white'>LinkedIn</a>
+        <div className='mt-3 sm:mt-0'>
+          <ul className=' flex flex-col items-center justify-center sm:flex-row'>
+            <li className='my-3 sm:mx-5 '>
+              <a href='#' className='text-white py-5'>LinkedIn</a>
             </li>
-            <li className='mx-5'>
-              <a href='#'  className='text-white'>Facebook</a>
+            <li className='my-3 sm:mx-5'>
+              <a href='#'  className='text-white py-5'>Facebook</a>
             </li>
-            <li className='mx-5'>
-              <a href='#'  className='text-white'>Instagram</a>
+            <li className='my-3 sm:mx-5'>
+              <a href='#'  className='text-white py-5'>Instagram</a>
             </li>
-            <li className='mx-5'>
-              <a href='#'  className='text-white'>Twitter</a>
+            <li className='my-3 sm:mx-5'>
+              <a href='#'  className='text-white py-5'>Twitter</a>
             </li>
           </ul>
-
         </div>
       </div>
     </div>

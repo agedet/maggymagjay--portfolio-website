@@ -2,15 +2,15 @@ import React from 'react'
 
 function Banner() {
   return (
-    <div className=' bg-[#ffffff] pt-12 px-5 sm:h-[80]:px-0' id='home '>
+    <div className='bg-[#ffffff] pt-12 px-5 sm:h-[80],px-0' id='home '>
       <div className='container mx-auto flex flex-col sm:flex-row'>
         {/* left hand */}
         <div className='bg-[#ffffff] flex-1 h-[80]'>
           <div>
-            <h1 className='font-[Roboto] text-[40px] font-[700] align-top text-start uppercase sm:text-[80px]'>
+            <h1 className='font-[Roboto] leading-tight text-[40px] font-[700] align-top text-start uppercase sm:text-[80px]'>
               Digital
             </h1>
-            <h1 className='font-[Roboto] text-[40px] font-[700] align-top text-start uppercase sm:text-[80px]'>
+            <h1 className='font-[Roboto] leading-tight text-[40px] font-[700] align-top text-start uppercase sm:text-[80px]'>
               Marketer
             </h1>
           </div>
@@ -41,10 +41,13 @@ function Banner() {
         </div>
 
         {/* right box */}
-        <div className='bg-[#ffffff] h-[80] flex justify-end items-end flex-1 sm:'>
-          <h1 className='font-[Roboto] text-[40px] font-[700] items-start uppercase sm:text-[80px]items-end'>
-            Margaret <br></br> James
+        <div className='bg-[#ffffff] h-[80] flex flex-col justify-end items-end flex-1'>
+          <h1 className='font-[Roboto] leading-tight text-[40px] font-[700] items-end uppercase sm:text-[80px],items-end'>
+            Margaret 
           </h1>
+          <h1 className='font-[Roboto] leading-tight text-[40px] font-[700] align-top text-end uppercase sm:text-[80px]'>
+              James
+            </h1>
         </div>
       </div>
       
