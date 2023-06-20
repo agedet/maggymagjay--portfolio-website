@@ -1,10 +1,26 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isScrolled, setIscrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 30) {
+        setIscrolled(true);
+      } else {
+        setIscrolled(false);
+      }
+    }
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onscroll);
+  }, []);
 
   return (
-    <div className='h-[74px] w-[100] flex justify-between items-center px-3'> 
+    <div  
+      // className='h-[74px] w-[100] flex justify-between items-center px-3'
+      className={isScrolled ? 'isScrolled' : 'notScrolled'}
+    > 
       <div className='container mx-auto'>
         <div className='flex  items-center justify-between'>
           <div className='h-[74px]'>
@@ -28,7 +44,7 @@ function Navbar() {
                 <ul>
                   <li className='mx-2'>
                     <a href='#contact' 
-                      className='border-2 border-[#fe1bfe22] rounded-3xl px-4 py-3'
+                      className='border-4 border-[#fe1bfe22] rounded-3xl px-6 py-3'
                     >
                       Contact me
                     </a>

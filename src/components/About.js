@@ -12,7 +12,7 @@ function About() {
         <div className='flex flex-col h-[100] pt-20 sm:flex-row'>
           <div className='flex-1 p-10 flex justify-center items-center '>
             <div 
-              className='p-10 bg-[#000000] h-[300px] w-60  relative'
+              className='rounded-lg p-10 bg-[#000000] h-[300px] w-60  relative'
             >
               <motion.div 
                  initial={{y: -100}}
@@ -20,9 +20,9 @@ function About() {
                  exit={{x: 0}}
                  transition={{
                    ease: 'easeIn',
-                   duration: '1'
+                   duration: '2'
                  }}
-                className=' bg-[#fe1bfe22] h-[300px] w-60 absolute -top-10'>
+                className='rounded-lg bg-[#fe1bfe22] h-[300px] w-60 absolute -top-10'>
               </motion.div>
 
             </div>

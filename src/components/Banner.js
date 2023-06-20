@@ -3,14 +3,14 @@ import {motion} from 'framer-motion'
 
 function Banner() {
   return (
-    <div className='bg-[#ffffff] pt-12 pb-12 px-5 sm:h-[80],px-0' id='home '>
+    <div className='bg-[#ffffff] pt-28 pb-12 px-5 sm:h-[80],px-0' id='home '>
       <div className='container mx-auto flex flex-col sm:flex-row'>
         {/* left hand */}
         <div className='bg-[#ffffff] flex-1 h-[80]'>
           <motion.div 
-            initial={{x: 100}}
-            animate={{x: 0}}
-            exit={{x: 0}}
+            initial={{y: 100}}
+            animate={{y: 0}}
+            exit={{y: 0}}
             transition={{
               ease: 'easeIn',
               duration: '1'
@@ -58,15 +58,15 @@ function Banner() {
 
         {/* right box */}
         <motion.div 
-           initial={{x: 100}}
-           animate={{x: 0}}
-           exit={{x: 0}}
+           initial={{y: 100}}
+           animate={{y: 0}}
+           exit={{y: 0}}
            transition={{
              ease: 'easeIn',
              duration: '1'
            }}
           className='bg-[#ffffff] h-[80] flex flex-col justify-end items-end flex-1'>
-          <h1 className='font-[Roboto] leading-tight text-[40px] font-[700] items-end uppercase sm:text-[80px],items-end'>
+          <h1 className='font-[Roboto] leading-tight text-end text-[40px] font-[700] items-end uppercase sm:text-[80px]'>
             Margaret 
           </h1>
           <h1 className='font-[Roboto] leading-tight text-[40px] font-[700] align-top text-end uppercase sm:text-[80px]'>
