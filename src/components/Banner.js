@@ -1,4 +1,5 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 
 function Banner() {
   return (
@@ -6,17 +7,32 @@ function Banner() {
       <div className='container mx-auto flex flex-col sm:flex-row'>
         {/* left hand */}
         <div className='bg-[#ffffff] flex-1 h-[80]'>
-          <div>
+          <motion.div 
+            initial={{x: 100}}
+            animate={{x: 0}}
+            exit={{x: 0}}
+            transition={{
+              ease: 'easeIn',
+              duration: '1'
+            }}
+          >
             <h1 className='font-[Roboto] leading-tight text-[40px] font-[700] align-top text-start uppercase sm:text-[80px]'>
               Digital
             </h1>
             <h1 className='font-[Roboto] leading-tight text-[40px] font-[700] align-top text-start uppercase sm:text-[80px]'>
               Marketer
             </h1>
-          </div>
+          </motion.div>
           
           <div className='h-[50]'>
-            <img 
+            <motion.img 
+              initial={{scale: 0.2}}  
+              animate={{scale: 1}} 
+              exit={{scale: 2}} 
+              transition={{
+                ease: 'backInOut',
+                duration: '2'
+              }}
               src='/images/banare.png'
               alt='magaret james'
               // width='70%'
@@ -41,14 +57,22 @@ function Banner() {
         </div>
 
         {/* right box */}
-        <div className='bg-[#ffffff] h-[80] flex flex-col justify-end items-end flex-1'>
+        <motion.div 
+           initial={{x: 100}}
+           animate={{x: 0}}
+           exit={{x: 0}}
+           transition={{
+             ease: 'easeIn',
+             duration: '1'
+           }}
+          className='bg-[#ffffff] h-[80] flex flex-col justify-end items-end flex-1'>
           <h1 className='font-[Roboto] leading-tight text-[40px] font-[700] items-end uppercase sm:text-[80px],items-end'>
             Margaret 
           </h1>
           <h1 className='font-[Roboto] leading-tight text-[40px] font-[700] align-top text-end uppercase sm:text-[80px]'>
               James
             </h1>
-        </div>
+        </motion.div>
       </div>
       
     </div>
