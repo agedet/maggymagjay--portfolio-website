@@ -13,8 +13,8 @@ function App() {
       <Navbar />
       <Banner />
       <About />
-      <Skills />
-      <Contact />
+      {/* <Skills /> */}
+      {/* <Contact /> */}
       <Footer />
     </div>
   );

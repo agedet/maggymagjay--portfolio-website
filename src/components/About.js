@@ -1,19 +1,29 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 
 function About() {
   return (
-    <div className='pt-10 px-5 sm:h-screen,px-0 ' id='about'>
+    <div className='pt-12 pb-12 px-5 sm:h-screen,px-0 ' id='about'>
       <div className='container mx-auto'>
         <div className='flex justify-center items-center px-8'>
-          <h1 className='items-center text-[40px] font-[500]'>About Me</h1>
+          <h3 className='items-center text-[30px] font-[500]'>About Me</h3>
         </div>
 
         <div className='flex flex-col h-[100] pt-20 sm:flex-row'>
           <div className='flex-1 p-10 flex justify-center items-center '>
-            <div className='border border-cyan-500 p-10 bg-[#000000] h-[300px] w-60  relative'>
-              <div className=' bg-[#fe1bfe22] h-[300px] w-60 absolute -top-10'>
-
-              </div>
+            <div 
+              className='p-10 bg-[#000000] h-[300px] w-60  relative'
+            >
+              <motion.div 
+                 initial={{y: -100}}
+                 animate={{y: 0}}
+                 exit={{x: 0}}
+                 transition={{
+                   ease: 'easeIn',
+                   duration: '1'
+                 }}
+                className=' bg-[#fe1bfe22] h-[300px] w-60 absolute -top-10'>
+              </motion.div>
 
             </div>
           </div>

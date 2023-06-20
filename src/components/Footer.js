@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='bg-[#000000] h-[60] flex items-center py-10'>
+    <div className='bg-[#000000] pt-12 pb-12 h-[60] flex items-center py-10'>
       <div className='container mx-auto flex flex-col justify-between items-center px-10 sm:flex-row'>
         {/* logo */}
         <div>

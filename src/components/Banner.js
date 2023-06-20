@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 
 function Banner() {
   return (
-    <div className='bg-[#ffffff] pt-12 px-5 sm:h-[80],px-0' id='home '>
+    <div className='bg-[#ffffff] pt-12 pb-12 px-5 sm:h-[80],px-0' id='home '>
       <div className='container mx-auto flex flex-col sm:flex-row'>
         {/* left hand */}
         <div className='bg-[#ffffff] flex-1 h-[80]'>
@@ -24,7 +24,7 @@ function Banner() {
             </h1>
           </motion.div>
           
-          <div className='h-[50]'>
+          <div className='pt-3 pb-3 h-[50]'>
             <motion.img 
               initial={{scale: 0.2}}  
               animate={{scale: 1}} 
