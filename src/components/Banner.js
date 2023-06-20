@@ -1,20 +1,22 @@
-import React from 'react'
-import {motion} from 'framer-motion'
+import React, { useState } from 'react'
+import {AnimatePresence, motion} from 'framer-motion'
 
 function Banner() {
+
   return (
-    <div className='bg-[#ffffff] pt-28 pb-12 px-5 sm:h-[80],px-0' id='home '>
+    <div className='bg-[#ffffff] pt-28 pb-12 px-5 sm:h-[80],px-0' id='home'>
       <div className='container mx-auto flex flex-col sm:flex-row'>
         {/* left hand */}
         <div className='bg-[#ffffff] flex-1 h-[80]'>
           <motion.div 
             initial={{y: 100}}
-            animate={{y: 0}}
+            // animate={{y: 0}}
             exit={{y: 0}}
             transition={{
               ease: 'easeIn',
               duration: '1'
             }}
+            whileInView={{y: 0}}
           >
             <h1 className='font-[Roboto] leading-tight text-[40px] font-[700] align-top text-start uppercase sm:text-[80px]'>
               Digital
@@ -23,11 +25,10 @@ function Banner() {
               Marketer
             </h1>
           </motion.div>
-          
           <div className='pt-3 pb-3 h-[50]'>
             <motion.img 
               initial={{scale: 0.2}}  
-              animate={{scale: 1}} 
+              whileInView={{scale: 1}} 
               exit={{scale: 2}} 
               transition={{
                 ease: 'backInOut',
@@ -59,11 +60,11 @@ function Banner() {
         {/* right box */}
         <motion.div 
            initial={{y: 100}}
-           animate={{y: 0}}
+           whileInView={{y: 0}}
            exit={{y: 0}}
            transition={{
              ease: 'easeIn',
-             duration: '1'
+             duration: '2'
            }}
           className='bg-[#ffffff] h-[80] flex flex-col justify-end items-end flex-1'>
           <h1 className='font-[Roboto] leading-tight text-end text-[40px] font-[700] items-end uppercase sm:text-[80px]'>

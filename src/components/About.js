@@ -16,11 +16,11 @@ function About() {
             >
               <motion.div 
                  initial={{y: -100}}
-                 animate={{y: 0}}
+                 whileInView={{y: 0}}
                  exit={{x: 0}}
                  transition={{
                    ease: 'easeIn',
-                   duration: '2'
+                   duration: '1'
                  }}
                 className='rounded-lg bg-[#fe1bfe22] h-[300px] w-60 absolute -top-10'>
               </motion.div>
