@@ -15,16 +15,15 @@ function About() {
               className='rounded-lg p-10 bg-[#000000] h-[300px] w-60  relative'
             >
               <motion.div 
-                 initial={{y: -100}}
-                 whileInView={{y: 0}}
-                 exit={{x: 0}}
-                 transition={{
-                   ease: 'easeIn',
-                   duration: '1'
-                 }}
+                initial={{y: -100}}
+                whileInView={{y: 0}}
+                exit={{x: 0}}
+                transition={{
+                  ease: 'easeIn',
+                  duration: '1'
+                }}
                 className='rounded-lg bg-[#fe1bfe22] h-[300px] w-60 absolute -top-10'>
               </motion.div>
-
             </div>
           </div>
 
